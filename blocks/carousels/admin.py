@@ -15,20 +15,12 @@ class SlideStackedInline(admin.StackedInline):
 class HtmlAdmin(PolymorphicChildModelAdmin, BlockAdminBase):
     inlines = (SlideStackedInline,)
     block_fieldsets = [
-        ('Carousel settings', {'fields': [
+        ('Carousel options', {'fields': [
             ('has_controls', 'has_indicators', 'has_captions'),
             'interval', 'keyboard', 'pause', 'ride', 'wrap',
         ]}),
-        ('Caption settings', {'fields': [
+        ('Caption options', {'fields': [
             'crop_size', 'image_css_class', 'caption_css_class',
         ]}),
     ]
 
-    # class Media:
-    #     js = (
-    #         '//cdn.ckeditor.com/4.9.2/standard/ckeditor.js',
-    #         'blocks/js/html.js',
-    #     )
-    #     css = {
-    #         'all': ()
-    #     }

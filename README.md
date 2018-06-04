@@ -41,7 +41,7 @@ Add `'blocks'` to your `INSTALLED_APPS` setting.
 Add sections that you want to `BLOCKS_SECTIONS` setting.
 
     BLOCKS_SECTIONS = (
-        ('sidebar', 'header'),
+        ('header', 'Header'),
         ('sidebar', 'Sidebar'),
         ('footer', 'Footer'),
     )
@@ -70,7 +70,7 @@ To be written soon
 To be written soon
 
 ### Carousel Block
-To be written soon
+You can refer to [bootstrap 4 carousel docs][bootstrap-carousel-docs-url] to change Carousel options.
 
 ## Create a Custom SubBlock
 To be written soon
@@ -79,6 +79,8 @@ To be written soon
 * Add caching
 * Create documentation
 * Tests
+* I18N
 
 [polymorphic-url]: https://github.com/django-polymorphic/django-polymorphic
 [sorl-thumbnail-url]: https://github.com/jazzband/sorl-thumbnail
+[bootstrap-carousel-docs-url]: https://getbootstrap.com/docs/4.0/components/carousel/#options
