@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+recursive-include docs *
+recursive-include blocks/static *.js *.css
+recursive-include blocks/templates *.html
+recursive-include blocks/locale *.mo
+global-exclude __pycache__
+global-exclude *.py[co]

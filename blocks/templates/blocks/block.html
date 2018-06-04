@@ -1,0 +1,8 @@
+{% for item in items %}
+  <section id="block-{{ item.id }}" class="block-wrapper {{ item.wrapper_css_class }}">
+    {% if item.show_title %}
+      <h3>{{ item.title }}</h3>
+    {% endif %}
+    {% include item.template %}
+  </section>
+{% endfor %}
