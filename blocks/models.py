@@ -16,7 +16,7 @@ class PublishMixin(models.Model):
         default=constants.STATUS_UNPUBLISHED,
         db_index=True,
         help_text=_(
-            "Only admins can see drafts."
+            "Only admins can see unpublished items."
         )
     )
     created = models.DateTimeField(

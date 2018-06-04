@@ -62,6 +62,10 @@ render the blocks in the sections you defined in the `BLOCKS_SECTIONS`.
 
 Use admin to create a custom HTML block or a Carousel block.
 
+![Django blocks: add Block][add-block-img]
+![Django blocks: add Carousel block][add-carousel-block-img]
+![Django blocks: add HTML block][add-html-block-img]
+
 ## Admin app settings
 ### General settings
 To be written soon
@@ -80,6 +84,10 @@ To be written soon
 * Create documentation
 * Tests
 * I18N
+
+[add-block-img]: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-block.jpg
+[add-carousel-block-img]: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-carousel-block.jpg
+[add-html-block-img]: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-html-block.jpg
 
 [polymorphic-url]: https://github.com/django-polymorphic/django-polymorphic
 [sorl-thumbnail-url]: https://github.com/jazzband/sorl-thumbnail

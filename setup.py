@@ -15,6 +15,7 @@ setup(
     license='BSD',
     description='Blocks is a Django app to render partial blocks of code in django template.',
     long_description=README,
+    long_description_content_type="text/markdown",
     url='https://eneepo.com/',
     author='Eneepo',
     author_email='eneepo@gmail.com',

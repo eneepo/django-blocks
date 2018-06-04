@@ -5,6 +5,6 @@ STATUS_UNPUBLISHED = 1
 STATUS_PUBLISHED = 2
 
 STATUS_CHOICES = (
-    (STATUS_UNPUBLISHED, _("Unpublish")),
-    (STATUS_PUBLISHED, _("Publish")),
+    (STATUS_UNPUBLISHED, _("Unpublished")),
+    (STATUS_PUBLISHED, _("Published")),
 )
