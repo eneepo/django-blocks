@@ -1,0 +1,11 @@
+{% load i18n %}
+{% with alert=item %}
+<div class="alert alert-{{ alert.style }}{% if alert.has_dismiss_button %} alert-dismissible fade show{% endif %}" role="alert">
+  {{ alert.content|safe }}
+  {% if alert.has_dismiss_button %}
+    <button type="button" class="close" data-dismiss="alert" aria-label="{% trans 'Close' %}">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  {% endif %}
+</div>
+{% endwith %}

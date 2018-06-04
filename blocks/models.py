@@ -91,8 +91,14 @@ class Block(PolymorphicModel, PublishMixin):
     section = models.CharField(_('Section'), max_length=255, choices=BLOCKS_SECTIONS,
                                blank=True, null=True,)
 
-    wrapper_css_class = models.CharField(_('Wrapper css class'), max_length=255, db_index=True,
-                                         blank=True, null=True)
+    wrapper_css_class = models.CharField(
+        _('Wrapper css class'), max_length=255, db_index=True, blank=True, null=True,
+        help_text=_(
+            ''' You can use the <b>invisible</b> class to hide the element and later remove 
+            the invisible class with some conditions using js. 
+            '''
+        )
+    )
 
     class Meta:
         app_label = 'blocks'

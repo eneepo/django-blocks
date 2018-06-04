@@ -1,5 +1,5 @@
 {% for item in items %}
-  <section id="block-{{ item.id }}" class="block-wrapper {{ item.wrapper_css_class }}">
+  <section id="block-{{ item.id }}" class="block-wrapper {{ item.wrapper_css_class }}" data-id="{{ item.id }}">
     {% if item.show_title %}
       <h3>{{ item.title }}</h3>
     {% endif %}

@@ -50,8 +50,9 @@ Add block apps that you want to use to `BLOCKS_APPS` setting.
 There's no need to add these apps to `INSTALLED_APPS`. 
 
     BLOCKS_APPS = (
-        'blocks.html',
+        'blocks.alerts',
         'blocks.carousels',
+        'blocks.html',
     )
 
 In your template load `blocks` and use `{% render_block 'your_section' %}` to
@@ -70,11 +71,14 @@ Use admin to create a custom HTML block or a Carousel block.
 ### General settings
 To be written soon
 
-### HTML Block
+### Alert Block
 To be written soon
 
 ### Carousel Block
 You can refer to [bootstrap 4 carousel docs][bootstrap-carousel-docs-url] to change Carousel options.
+
+### HTML Block
+To be written soon
 
 ## Create a Custom SubBlock
 To be written soon
