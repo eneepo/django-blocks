@@ -28,24 +28,15 @@ Requirements
 -  Python (3.4, 3.5, 3.6) \*
 -  Django (1.11, 2.0) \*
 -  `django-polymorphic`_
--  [sorl-thumbnail][sorl-thumbnail-url] \*\*
+-  `sorl-thumbnail`_ \*\*
 
 | *\* Not checked with other versions.*
 | *\*\* It’s not mandatory. You can use whatever you want to generate
   thumbnails but you should override the templates.*
 
-Todo
-----
-
--  Add caching
--  Create documentation
--  Tests
--  I18N
-
-[sorl-thumbnail-url]
 
 .. _django-polymorphic: https://github.com/django-polymorphic/django-polymorphic
-
+.. _sorl-thumbnail: https://github.com/jazzband/sorl-thumbnail
 .. |Django blocks: add Block| image:: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-block.jpg
 .. |Django blocks: add Carousel block| image:: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-carousel-block.jpg
 .. |Django blocks: add HTML block| image:: https://raw.githubusercontent.com/eneepo/django-blocks/master/docs/img/screenshots/django-admin--add-html-block.jpg
