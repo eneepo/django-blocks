@@ -1,13 +1,11 @@
 from django.contrib import admin
 
-from polymorphic.admin import PolymorphicChildModelAdmin, PolymorphicChildModelFilter
-
 from blocks.admin import BlockAdminBase
 from .models import Alert
 
 
 @admin.register(Alert)
-class HtmlAdmin(PolymorphicChildModelAdmin, BlockAdminBase):
+class HtmlAdmin(BlockAdminBase):
     block_fieldsets = [
         ('Alert options', {'fields': [
             'style', 'has_dismiss_button', 'content',

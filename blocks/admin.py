@@ -5,13 +5,14 @@ from django.conf import settings
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 
-from polymorphic.admin import PolymorphicParentModelAdmin, PolymorphicChildModelFilter
+from polymorphic.admin import (PolymorphicParentModelAdmin, PolymorphicChildModelAdmin,
+                               PolymorphicChildModelFilter)
 
 from . import actions
 from . import models
 
 
-class BlockAdminBase(admin.ModelAdmin):
+class BlockAdminMixin(admin.ModelAdmin):
     base_model = models.Block
     date_hierarchy = 'publish_date'
     list_display = ('title', 'section', 'status',
@@ -43,11 +44,15 @@ class BlockAdminBase(admin.ModelAdmin):
         ]
 
         self.fieldsets = fieldsets
-        return super(BlockAdminBase, self).get_fieldsets(request, obj)
+        return super(BlockAdminMixin, self).get_fieldsets(request, obj)
+
+
+class BlockAdminBase(PolymorphicChildModelAdmin, BlockAdminMixin):
+    pass
 
 
 @admin.register(models.Block)
-class BlockAdmin(PolymorphicParentModelAdmin, BlockAdminBase):
+class BlockAdmin(PolymorphicParentModelAdmin, BlockAdminMixin):
     base_model = models.Block
     list_filter = (PolymorphicChildModelFilter, )
 
